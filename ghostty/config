@@ -1,0 +1,26 @@
+# main 
+
+#theme = monochrome-gray.theme 
+minimum-contrast = 1.05
+theme = light:Gruvbox Light,dark:Gruvbox Dark  
+auto-update = download 
+
+
+# window options #
+window-decoration = false  
+window-padding-x = 0
+window-padding-y = 0  
+window-padding-color = extend-always
+window-save-state = always 
+gtk-titlebar = true 
+title = " "
+mouse-hide-while-typing = true
+scrollback-limit = 10000
+adjust-cell-height = -10%
+# font options #
+cursor-color = #008000
+# font-family = "Paper Mono Regular"  
+font-family = "IBM Plex Mono"
+font-size = 14
+copy-on-select = true
+

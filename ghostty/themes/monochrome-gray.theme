@@ -1,0 +1,29 @@
+# dark, low brightness bg 
+background = #ffffff
+
+# high contrast, not pure white 
+foreground = #555555
+
+# cursor and selection 
+cursor-color = #555555
+cursor-text = #ffffff
+selection-background = #e0e0e0
+selection-foreground = #333333
+
+# grayscale-like palette, tuned for low chroma 
+palette = 0=#ffffff
+palette = 1=#aa4444
+palette = 2=#448844
+palette = 3=#aa8844
+palette = 4=#4466aa
+palette = 5=#884488
+palette = 6=#338888
+palette = 7=#555555
+palette = 8=#c0c0c0
+palette = 9=#bb5555
+palette = 10=#559955
+palette = 11=#bb9955
+palette = 12=#5577bb
+palette = 13=#995599
+palette = 14=#449999
+palette = 15=#222222
