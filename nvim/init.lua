@@ -16,3 +16,10 @@ vim.cmd.colorscheme("alduin")
 -- vim.opt.background = "dark"
 -- vim.cmd.colorscheme("gruvbox")
 vim.opt.cmdheight = 0
+
+-- diable auto-commenting on newline
+vim.api.nvim_create_autocmd("BufEnter", {
+    callback = function()
+        vim.opt.formatoptions:remove({"c","r", "o" })
+    end,
+})
