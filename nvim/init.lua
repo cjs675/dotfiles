@@ -23,3 +23,17 @@ vim.api.nvim_create_autocmd("BufEnter", {
         vim.opt.formatoptions:remove({"c","r", "o" })
     end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function(args)
+        -- disable agressive c-style indenting in markdown 
+        vim.opt_local.smartindent = false
+        vim.opt_local.cindent = false
+        -- auto close 3 backticks, put cursor at end of top backticks 
+        vim.keymap.set('i', '```', '```<CR>```<Esc>ka', {
+            buffer = args.buf,
+            desc = "Auto-close markdown codeblocks"
+        })
+    end,
+})

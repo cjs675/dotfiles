@@ -135,6 +135,13 @@ require("mini.statusline").setup({
 require("mason").setup()
 
 
+
+-- grab nvim's default capabilities
+local default_caps = vim.lsp.protocol.make_client_capabilities()
+
+-- add clangd-specific encoding to fix defaults 
+default_caps.offsetEncoding = { "utf-16" }
+
 -- configure c++ lang server (clangd) 
 vim.lsp.config('clangd', {
     cmd = {
@@ -145,12 +152,12 @@ vim.lsp.config('clangd', {
         "--completion-style=detailed",
     },
     -- fix common conflict between clangd & encoding preferences 
-    capabilities = {
-        offsetEncoding = { "utf-16" },
-    },
+    capabilities =  default_caps,
 })
 
 vim.lsp.enable('clangd')
+
+
 
 -- dashboard.vim --
 require("dashboard").setup({

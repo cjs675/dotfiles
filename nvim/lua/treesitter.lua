@@ -1,7 +1,5 @@
 local configs = require("nvim-treesitter")
 
-
-
 configs.setup({
     ensure_installed = {
         -- languages 
@@ -16,6 +14,9 @@ configs.setup({
     },
     sync_install = false,
     highlight = {
+        enable = true,
+    },
+    indent = {
         enable = true,
     },
 })
