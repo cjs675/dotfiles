@@ -18,10 +18,14 @@ title = " "
 mouse-hide-while-typing = true
 scrollback-limit = 10000
 adjust-cell-height = -10%
-# font options #
-cursor-color = #008000
+# font options # 
+
 # font-family = "Paper Mono Regular"  
 font-family = "IBM Plex Mono"
 font-size = 14
 copy-on-select = true
 
+# cursor style 
+cursor-color = #008000
+cursor-style-blink = true
+cursor-style = block
