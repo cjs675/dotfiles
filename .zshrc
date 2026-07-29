@@ -2,7 +2,8 @@
 # PROMPT INITIALIZATION
 # ============================================================================
 eval "$(starship init zsh)"
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export STARSHIP_CONFIG=~/.config/starship/starship.toml 
+
 
 # ============================================================================
 # ENVIRONMENT & PATH SETUP
@@ -45,11 +46,12 @@ zstyle ':completion:*' menu select
 
 # ============================================================================
 # ALIASES
-# ============================================================================
+# ============================================================================ 
+alias gp="git push"
 alias nv="nvim"
 alias py="python3"
-alias dev="cd /Users/chrissilva/environment/"
-alias config="cd /Users/chrissilva/.config"
+alias dev="cd /Users/data/Code/"
+alias config="cd /Users/data/.config"
 alias ls="eza --long --sort=size --icons"
 alias ..='cd .. && ls'
 alias ...='cd ../.. && ls'
@@ -62,7 +64,6 @@ alias tn='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tk='tmux kill-session -t' 
 alias gs='git status'
-alias gp='git push'
 
 # ============================================================================
 # TMUX AUTO-ATTACH
@@ -129,6 +130,8 @@ run() {
     g++ "$src" -o "$out" && ./"$out" 
 }
 
+
+eval "$(zoxide init zsh)"
 
 
 
