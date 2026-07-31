@@ -17,4 +17,15 @@ alias ta='tmux attach -t'
 alias tn='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tk='tmux kill-session -t' 
-alias gs='git status'
+alias gs='git status' 
+
+
+# create dir, cd, create file, open in nv 
+mkcd() {
+    dir="$1"
+    file="$2" 
+    mkdir -p "$dir" && cd "$dir" && touch "$file" && nv "$file"
+}  
+
+# Added by Antigravity CLI installer
+export PATH="$HOME/.local/bin:$PATH"
