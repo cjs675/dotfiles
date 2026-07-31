@@ -50,8 +50,8 @@ zstyle ':completion:*' menu select
 alias gp="git push"
 alias nv="nvim"
 alias py="python3"
-alias dev="cd /Users/data/Code/"
-alias config="cd /Users/data/.config"
+alias dev="cd \$HOME/Environment/"
+alias config="cd \$HOME/.config"
 alias ls="eza --long --sort=size --icons"
 alias ..='cd .. && ls'
 alias ...='cd ../.. && ls'
