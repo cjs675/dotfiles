@@ -1,5 +1,3 @@
-# main 
-
 #theme = monochrome-gray.theme 
 minimum-contrast = 1.05
 # theme = light:Gruvbox Light,dark:Gruvbox Dark   
@@ -9,8 +7,7 @@ theme = Black Metal (Immortal)
 # theme = Batman
 auto-update = download 
 
-
-# window options #
+###  window options ###
 window-decoration = false  
 window-padding-x = 0
 window-padding-y = 0  
@@ -20,15 +17,24 @@ gtk-titlebar = true
 title = " "
 mouse-hide-while-typing = true
 scrollback-limit = 10000
-adjust-cell-height = -10%
-# font options # 
+adjust-cell-height = -5% 
+background-opacity = 0.92
+background-blur-radius = 20
 
-# font-family = "Paper Mono Regular"  
-font-family = "IBM Plex Mono"
+### font options ### 
+# font-family = "Paper Mono Regular"   
+font-family = "Jetbrains Mono Extra Light" 
+# font-family = "IBM Plex Mono"
 font-size = 14
 copy-on-select = true
 
 # cursor style 
 cursor-color = #008000
-cursor-style-blink = true
-cursor-style = block
+cursor-style-blink = false 
+cursor-style = block 
+
+###  misc ###  
+selection-invert-fg-bg = true
+clipboard-read = allow
+clipboard-write = allow 
+custom-shader = ~/Dotfiles/ghostty/shaders/cursor_warp.glsl
