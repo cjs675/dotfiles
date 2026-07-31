@@ -2,8 +2,10 @@
 
 #theme = monochrome-gray.theme 
 minimum-contrast = 1.05
-theme = light:Gruvbox Light,dark:Gruvbox Dark   
-#theme = Black Metal (Mayhem)
+# theme = light:Gruvbox Light,dark:Gruvbox Dark   
+# theme = Black Metal (Mayhem) 
+theme = light:Iceberg Light, dark:Black Metal (Immortal)
+# theme = Batman
 auto-update = download 
 
 
