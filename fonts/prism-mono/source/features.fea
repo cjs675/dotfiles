@@ -1,0 +1,18 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+feature calt {
+    # 3-char sequences first (longest match wins in GSUB lookup order)
+    sub equal equal equal by equalEqualEqual;
+    sub exclam equal equal by notEqualEqual;
+    sub less equal greater by spaceship;
+    sub equal equal greater by arrowDoubleRight;
+    # 2-char sequences
+    sub hyphen greater by arrowRight;
+    sub equal greater by arrowDouble;
+    sub less hyphen by arrowLeft;
+    sub less equal by lessEqual;
+    sub greater equal by greaterEqual;
+    sub equal equal by equalEqual;
+    sub exclam equal by notEqual;
+} calt;
