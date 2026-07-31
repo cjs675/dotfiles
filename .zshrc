@@ -12,10 +12,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$HOME/.cargo/bin:$PATH"                                          # Rust
 export PATH="/usr/local/go/bin:$PATH"                                         # Go
-export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"       # Solana
-export PATH="/opt/homebrew/opt/emacs/bin:$PATH"                               # Emacs
 export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"                  # GNU tar
-export PATH="/Users/data/.avm/bin:$PATH"                                      # AVM
 export PATH="/Applications/Postgres.app/Contents/Versions/18/bin:$PATH"       # Postgres
 export PATH="$HOME/.local/bin:$PATH"                                          # Local scripts
 
@@ -52,7 +49,7 @@ alias nv="nvim"
 alias py="python3"
 alias dev="cd \$HOME/Environment/"
 alias config="cd \$HOME/.config"
-alias ls="eza --long --sort=size --icons"
+alias ls="eza --long --sort=size --icons -a" 
 alias ..='cd .. && ls'
 alias ...='cd ../.. && ls'
 alias h='history'
@@ -133,10 +130,8 @@ run() {
 
 eval "$(zoxide init zsh)"
 
-
-
 # Added by Antigravity CLI installer
-export PATH="/Users/chrissilva/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 # bun completions
-[ -s "/Users/chrissilva/.bun/_bun" ] && source "/Users/chrissilva/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
