@@ -4,13 +4,14 @@ if vim.fn.has("mac") == 1 then
 end
 
 --    ui2 provides resedign & rewrite of nvim's message routing & 
---    command line system
-require("vim._core.ui2").enable({})
-
+--    command line system 
+require("pack")
 require("options")
 require("keymaps")
 require("commands")
-require("pack")
+require("lsp")
+require("treesitter")
+require("terminal")
 
 vim.cmd.colorscheme("alduin")
 -- vim.opt.background = "dark"

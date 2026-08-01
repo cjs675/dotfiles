@@ -10,6 +10,11 @@ vim.pack.add({
     "https://github.com/nvimdev/dashboard-nvim",
     "https://github.com/ellisonleao/gruvbox.nvim",
     "https://github.com/nvim-tree/nvim-tree.lua",
+    "https://github.com/saghen/blink.cmp",
+    "https://github.com/saghen/blink.lib",
+    "https://github.com/nvim-telescope/telescope.nvim",
+    "https://github.com/stevearc/conform.nvim",
+    "https://github.com/akinsho/toggleterm.nvim",
 
 })
 
