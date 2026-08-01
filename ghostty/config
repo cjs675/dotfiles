@@ -23,8 +23,10 @@ background-blur-radius = 20
 
 ### font options ### 
 # font-family = "Paper Mono Regular"   
-font-family = "Jetbrains Mono Extra Light" 
-# font-family = "IBM Plex Mono"
+# font-family = "Jetbrains Mono Extra Light" 
+# font-family = "IBM Plex Mono"  
+font-family = "Geist Mono"
+# font-family = "ShareTechMono-Regular"
 font-size = 14
 copy-on-select = true
 
