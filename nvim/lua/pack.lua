@@ -9,6 +9,7 @@ vim.pack.add({
     "https://github.com/nvim-tree/nvim-web-devicons",
     "https://github.com/nvimdev/dashboard-nvim",
     "https://github.com/ellisonleao/gruvbox.nvim",
+    "https://github.com/nvim-tree/nvim-tree.lua",
 
 })
 
@@ -134,6 +135,17 @@ require("mini.statusline").setup({
 -- initialize maston to manage external tooling libs 
 require("mason").setup()
 
+-- nvim-tree setup --
+require("nvim-tree").setup({
+    view = {
+        width = 30,
+        side = "left",
+    },
+    filters = {
+        dotfiles = true,
+    },
+})
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "Toggle Sidebar File Tree" })
 
 
 -- grab nvim's default capabilities
