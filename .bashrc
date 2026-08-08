@@ -29,3 +29,6 @@ mkcd() {
 
 # Added by Antigravity CLI installer
 export PATH="$HOME/.local/bin:$PATH"
+
+# cmd-one terminal command helper
+source "/Users/chrissilva/Environment/projects/command-one/shell_integration.bash"
