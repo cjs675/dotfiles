@@ -138,4 +138,7 @@ export PATH="$HOME/.local/bin:$PATH"
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # cmd-one terminal command helper
-source "/Users/chrissilva/Environment/projects/command-one/shell_integration.zsh"
+source "/Users/chrissilva/Environment/projects/command-one/shell_integration.zsh" 
+
+
+export GEMINI_APY_KEY=$(security find-generic-password -a "$USER" -s "gemini_api_key" -w 2>/dev/null) 
