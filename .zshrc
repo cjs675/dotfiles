@@ -54,7 +54,8 @@ alias ..='cd .. && ls'
 alias ...='cd ../.. && ls'
 alias h='history'
 alias ports='netstat -tulanp'
-alias uvr='uv run'
+alias uvr='uv run' 
+alias dotfile="cd \$HOME/Dotfiles"
 # tmux shortcuts
 alias ta='tmux attach -t'
 alias tn='tmux new-session -s'
@@ -135,3 +136,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # bun completions
 [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# cmd-one terminal command helper
+source "/Users/chrissilva/Environment/projects/command-one/shell_integration.zsh"
