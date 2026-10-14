@@ -11,7 +11,7 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="$HOME/.cargo/bin:$PATH"                                          # Rust
-export PATH="/usr/local/go/bin:$PATH"                                         # Go
+# export PATH="/usr/local/go/bin:$PATH"                                         # Legacy Go (commented out to use Homebrew Go)
 export PATH="/opt/homebrew/opt/gnu-tar/libexec/gnubin:$PATH"                  # GNU tar
 export PATH="/Applications/Postgres.app/Contents/Versions/18/bin:$PATH"       # Postgres
 export PATH="$HOME/.local/bin:$PATH"                                          # Local scripts
